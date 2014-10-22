@@ -115,10 +115,10 @@ module.exports = function (grunt) {
             '.tmp',
             '<%= config.dist %>/*',
             '!<%= config.dist %>/.git*',
-            '!<%= yeoman.dist %>/Procfile',
-            '!<%= yeoman.dist %>/package.json',
-            '!<%= yeoman.dist %>/web.js',
-            '!<%= yeoman.dist %>/node_modules'
+            '!<%= config.dist %>/Procfile',
+            '!<%= config.dist %>/package.json',
+            '!<%= config.dist %>/server.js',
+            '!<%= config.dist %>/node_modules'
           ]
         }]
       },
