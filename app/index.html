@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js">
 
 <head>
 
@@ -20,12 +20,16 @@
 
     <!-- Twitter -->
 
-    <!-- Bootstrap Core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
 
-    <!-- Custom CSS -->
+    <!-- build:css(.tmp) styles/main.css -->
     <link href="styles/agency.css" rel="stylesheet">
     <link href="styles/pricing.css" rel="stylesheet">
+    <!-- endbuild -->
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -423,24 +427,26 @@
         </div>
     </footer>
 
-    <!-- jQuery Version 2.1.1 -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-    <!-- Bootstrap Core JavaScript Version 3.2.0 -->
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- build:js({app,.tmp}) scripts/custom.js -->
+    <script src="scripts/classie.js"></script>
+    <script src="scripts/cbpAnimatedHeader.js"></script>
+    <script src="scripts/jqBootstrapValidation.js"></script>
+    <script src="scripts/contact_me.js"></script>
+    <!-- endbuild -->
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="scripts/classie.js"></script>
-    <script src="scripts/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="scripts/jqBootstrapValidation.js"></script>
-    <script src="scripts/contact_me.js"></script>
-
-    <!-- Custom JavaScript -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/agency.js"></script>
     <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 
 </body>
 
