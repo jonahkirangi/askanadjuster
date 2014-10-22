@@ -114,7 +114,11 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= config.dist %>/*',
-            '!<%= config.dist %>/.git*'
+            '!<%= config.dist %>/.git*',
+            '!<%= yeoman.dist %>/Procfile',
+            '!<%= yeoman.dist %>/package.json',
+            '!<%= yeoman.dist %>/web.js',
+            '!<%= yeoman.dist %>/node_modules'
           ]
         }]
       },
@@ -325,6 +329,21 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      heroku: {
+        options: {
+          remote: 'git@heroku.com:askanadjuster.git',
+          branch: 'master'
+        }
+      }
     }
   });
 
@@ -366,6 +385,8 @@ module.exports = function (grunt) {
       'mocha'
     ]);
   });
+
+  grunt.registerTask('deploy', ['buildcontrol']);
 
   grunt.registerTask('build', [
     'clean:dist',
