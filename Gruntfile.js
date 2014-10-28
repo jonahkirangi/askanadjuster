@@ -118,7 +118,8 @@ module.exports = function (grunt) {
             '!<%= config.dist %>/Procfile',
             '!<%= config.dist %>/package.json',
             '!<%= config.dist %>/server.js',
-            '!<%= config.dist %>/node_modules'
+            '!<%= config.dist %>/node_modules',
+            '!<%= config.dist %>/mail'
           ]
         }]
       },
