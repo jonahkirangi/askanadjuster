@@ -339,6 +339,16 @@ section h3.section-subheading {
     font-weight: 400;
 }
 
+section h3.legal {
+    text-align: left !important;
+    margin-bottom: 5px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-style: none;
+    font-weight: 400;
+}
+
 @media(min-width:768px) {
     section {
         padding: 150px 0;
