@@ -339,6 +339,15 @@ section h3.section-subheading {
     font-weight: 400;
 }
 
+section h3.section-contact {
+    text-transform: none;
+    text-align: center !important;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
 section h3.legal {
     text-align: left !important;
     margin-bottom: 5px;
@@ -662,8 +671,9 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url(../images/map-image.png);
+    background-color: #404040;
+    /*background-color: #222;*/
+    /*background-image: url(../images/map-image.png);*/
     background-position: center;
     background-repeat: no-repeat;
 }
