@@ -671,11 +671,11 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #404040;
-    /*background-color: #222;*/
-    /*background-image: url(../images/map-image.png);*/
+    /*background-color: #404040;*/
+    background-image: url(../images/congruent_outline.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section#contact .section-heading {
